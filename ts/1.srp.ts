@@ -1,3 +1,7 @@
+//
+// Single Responsibility Principle - class should have only one reason to change, meaning that it should have only one responsibility or job.
+//
+
 // Without SRP
 class User {
   public age = 40;
