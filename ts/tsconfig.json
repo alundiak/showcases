@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // or a higher version depending on your target environment
+    "module": "esnext", // or "es6" if targeting an environment that supports ES6 modules
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

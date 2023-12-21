@@ -15,6 +15,7 @@ class User {
 }
 
 // With SRP
+// A class should have only one reason to change, meaning that it should have only one responsibility or job.
 class User {
   constructor(name, email) {
     this.name = name;
