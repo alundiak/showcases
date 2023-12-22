@@ -41,6 +41,23 @@ This allows you to substitute different implementations without affecting the co
 - In .NET, the LINQ (Language Integrated Query) extensions and the concept of IEnumerable demonstrate LSP.
 - LSP is pervasive in object-oriented languages like Java, C#, and Python. Polymorphism, achieved through interfaces and inheritance, allows you to use objects of derived classes wherever base class objects are expected.
 
+**Interface Segregation Principle (ISP)**
+
+- class should not be forced to implement interfaces it does not use.
+- it is better to have multiple, small, and specific interfaces rather than a single large, general-purpose interface.
+- The main objective of ISP is to avoid imposing unnecessary dependencies on classes and to provide flexibility for clients to depend only on the interfaces they need. 
+By breaking down interfaces into smaller units, you make it easier to create more specific and focused contracts.
+
+Examples:
+
+- Angular follows SOLID principles, including ISP. In Angular, services often expose interfaces defining the specific functionality they provide. Components then depend on these interfaces rather than concrete implementations, allowing for easier substitution and adhering to ISP.
+- React's component-based architecture encourages the creation of focused, small components that adhere to the Single Responsibility Principle (SRP) and Interface Segregation Principle. Components communicate through well-defined interfaces, such as props and state.
+- Express, a popular web framework for Node.js, follows good design principles, including ISP. Middleware functions in Express often expose well-defined interfaces, and you can compose them to build more complex functionality.
+- Java Spring Framework
+- JUnit (Java)
+- .NET Core
+
+
 # Not SOLID info
 
 - The Common Closure Principle (CCP) and Common Reuse Principle (CRP) are not part of the SOLID principles.
