@@ -45,7 +45,7 @@ class User {
   }
 }
 
-function test1() {
+function testSRP_1(): void {
   const u = new User('Andrii', 'andrii@lundiak.com', '12-10-1982');
   u.save();
   u.sendEmail('Hello');
@@ -58,7 +58,7 @@ function test1() {
     console.log("Today is not your birthday.", u);
   }
 }
-// test1();
+testSRP_1();
 
 class UserWithSRP {
   public age = 40;
@@ -129,7 +129,7 @@ class EmailService {
   }
 }
 
-function test2() {
+function testSRP_2(): void {
   const userInstance = new UserWithSRP('Andrii', 'andrii@lundiak.com', '12-10-1982', 'Europe/Warsaw');
 
   const uRepo = new UserRepository();
@@ -144,4 +144,4 @@ function test2() {
     console.log("Today is not your birthday.", userInstance);
   }
 }
-test2();
+testSRP_2();

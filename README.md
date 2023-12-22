@@ -57,6 +57,12 @@ Examples:
 - JUnit (Java)
 - .NET Core
 
+**Dependency Inversion Principle (DIP)**
+- high-level modules should not depend on low-level modules but rather both should depend on abstractions
+- abstractions should not depend on details; details should depend on abstractions
+
+Examples:
+- 
 
 # Not SOLID info
 

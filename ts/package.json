@@ -7,7 +7,7 @@
     "build": "tsc -d"
   },
   "dependencies": {
-    "typescript": "^5.4.0-dev.20231221"
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@types/node": "^20.10.5"

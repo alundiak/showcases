@@ -33,7 +33,7 @@ class AreaCalculator {
   }
 }
 
-function test1() {
+function testOCP_1() {
   const rectangleInstance = new Rectangle(100, 500);
   const areaCalculator = new AreaCalculator();
   const calculatedArea = areaCalculator.calculateRectangleArea(rectangleInstance);
@@ -48,7 +48,7 @@ function test1() {
   console.log(`New calculated Rectangle area is: ${newRectangleArea}`);
   console.log(`New calculated Circle area is: ${newCircleArea}`);
 }
-// test1();
+// testOCP_1();
 
 //
 // With OCP - v1 - using Abstract Class + extends

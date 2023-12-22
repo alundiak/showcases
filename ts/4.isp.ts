@@ -8,7 +8,7 @@ interface MyWorker {
   eat(): void;
 }
 
-function test1() {
+function testISP_1() {
   class LundiakWorker implements MyWorker {
     //
     // If eat() or work() is NOT NEEDED, NOT USED and then implementation SKIPPED, then TypeScript BUILD WILL FAIL !!!
@@ -31,7 +31,7 @@ function test1() {
   w.work();
   w.eat();
 }
-test1();
+testISP_1();
 
 // With ISP
 interface WorkableISP {
@@ -81,7 +81,7 @@ class TeamLeadISP implements WorkableISP, EatableISP, ManageableISP {
   // TypeScript doesn't throw error here, because we don't implement interface CoderISP method code()
 }
 
-function test2() {
+function testISP_2() {
   const teamLeadWorkerISP = new TeamLeadISP();
   console.log(teamLeadWorkerISP);
 
@@ -89,10 +89,14 @@ function test2() {
   teamLeadWorkerISP.eat();
   teamLeadWorkerISP.manage();
 }
-test2();
+testISP_2();
 
 // So if Worker interface gives us basic contract for employee to work() and eat() 
 // then Coder interface provides MINIMAL extension of potential feature of Worker - code()
 // and Manager interface also gives additional feature of employee to mange()
 // which in result gives us ability to code instances of Coder class and instance of teamLEad class 
 // with no need to implement methods from interfaces which are NOT relevant for Coder and TeamLead
+
+// function testAndrii() {
+
+// }
