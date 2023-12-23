@@ -1,7 +1,7 @@
 Software Development Showcases
 ===
 
-Repo is aimed to represent showcases for different Software Development things with code examples, maybe visualization to give an educational impression how all theoretical is implemented in practical.
+Showcases for different Software Development topics with code examples to give an educational impression of how theoretical becomes practical.
 
 # Topics
 
