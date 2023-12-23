@@ -20,16 +20,24 @@ Other:
 
 ## Key notes about Design patterns
 
-**Creational patterns**
+### Creational patterns
+
+**Singleton**:
 
 - The Singleton pattern solves two problems at the same time, violating the (SOLID) Single Responsibility Principle.
+- The `Object.freeze()` method makes sure that consuming code cannot modify the Singleton. 
+- are actually considered an anti-pattern, and can (or.. should) be avoided in JavaScript.
+- Simple real case scenario example with two buttons referring/using same Counter object => https://codesandbox.io/p/sandbox/singleton-1-64mr1
+- A Facade class can often be transformed into a Singleton since a single facade object is sufficient in most cases.
+- Flyweight would resemble Singleton if you somehow managed to reduce all shared states of the objects to just one flyweight object.
 
 
-**Structural patterns**
+
+### Structural patterns
 
 TBD
 
-**Behavioral patterns**
+### Behavioral patterns
 
 TBD
 
