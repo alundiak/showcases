@@ -45,6 +45,24 @@ Other:
 - The Module pattern allows you to split up your code into smaller, reusable pieces.
 - ES2015 introduced built-in JavaScript modules. 
 
+**Factory?** or **Factory Method**:
+- A function is a "factory function" when it returns a new object without the use of the `new` keyword!
+- A factory function is a function that returns another function or object. It is often used to create closures, which are functions that have access to variables from their lexical scope even after the scope has finished executing. 
+- In JavaScript, the factory pattern isn’t much more than a function that returns an object without using the new keyword. ES6 arrow functions allow us to create small factory functions that implicitly return an object each time.
+- Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+- Factory Method can be used for creating cross-platform UI elements without coupling the client code to concrete UI classes.
+- Factory Method can be used when you want to provide users of your library or framework with a way to extend its internal components.
+- Many designs start by using Factory Method (less complicated and more customizable via subclasses) and evolve toward Abstract Factory, Prototype, or Builder (more flexible, but more complicated).
+- Abstract Factory classes are often based on a set of Factory Methods, but you can also use Prototype to compose the methods on these classes.
+- You can use Factory Method along with Iterator to let collection subclasses return different types of iterators that are compatible with the collections.
+
+
+**Abstract Factory**:
+
+- Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+- Builder focuses on constructing complex objects step by step. Abstract Factory specializes in creating families of related objects. Abstract Factory returns the product immediately, whereas Builder lets you run some additional construction steps before fetching the product.
+- Abstract Factory can serve as an alternative to Facade when you only want to hide the way the subsystem objects are created from the client code.
+- Abstract Factories, Builders and Prototypes can all be implemented as Singletons.
 
 ### Structural patterns
 

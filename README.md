@@ -8,6 +8,15 @@ Showcases for different Software Development topics with code examples to give a
 - SOLID principles => [README.md](./solid/README.md)
 - Design Patterns => [README.md](./design-patterns/README.md)
 - maybe AntiPatterns? => https://sourcemaking.com/antipatterns
+- Architectural Patterns?
+  - showcases: Microservices, Monolithic, Serverless, and Event-Driven Architecture.
+- maybe Domain-Driven Design (DDD)?
+  - showcases: Bounded Contexts, Entities, Value Objects, and Aggregates.
+- maybe Testing? 
+  - showcases: Unit Testing, Integration Testing, and End-to-End Testing. Understand the importance of test-driven development (TDD) and behavior-driven development (BDD).
+
+SOLID principles are a set of guidelines for designing maintainable and scalable software, while design patterns are specific solutions to recurring design problems. 
+Following SOLID principles can lead to the creation of well-architected software, and design patterns are tools that can be applied within that architecture to address specific challenges.
 
 Special angle is JavaScript. JavaScript functional programming language and many SOLID principles and Design patterns are not so relevant in JavaScript world. But since TypeScript appeared as superset after JavaScript, implementing more and more ECMAScript paradigms/features it becomes more Object Orienting approach. And now, some principles and patterns may apply and code can follow and be compliant.  
 
