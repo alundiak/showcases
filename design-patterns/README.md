@@ -46,6 +46,7 @@ Other:
 - ES2015 introduced built-in JavaScript modules. 
 
 **Factory?** or **Factory Method**:
+
 - A function is a "factory function" when it returns a new object without the use of the `new` keyword!
 - A factory function is a function that returns another function or object. It is often used to create closures, which are functions that have access to variables from their lexical scope even after the scope has finished executing. 
 - In JavaScript, the factory pattern isn’t much more than a function that returns an object without using the new keyword. ES6 arrow functions allow us to create small factory functions that implicitly return an object each time.
@@ -63,6 +64,11 @@ Other:
 - Builder focuses on constructing complex objects step by step. Abstract Factory specializes in creating families of related objects. Abstract Factory returns the product immediately, whereas Builder lets you run some additional construction steps before fetching the product.
 - Abstract Factory can serve as an alternative to Facade when you only want to hide the way the subsystem objects are created from the client code.
 - Abstract Factories, Builders and Prototypes can all be implemented as Singletons.
+
+**Builder**:
+
+- 
+- 
 
 ### Structural patterns
 
