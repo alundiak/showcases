@@ -1,18 +1,9 @@
 SOLID principles showcase
 ===
 
+![img](./SOLID1.png)
+
 # SOLID info
-
-ChatGPT:
-
-| Framework/Lib     | SRP | OCP | LSP | ISP | DIP |
-|-------------------|-----|-----|-----|-----|-----|
-| React (JavaScript)| +   | +   | +   | -   | +   |
-| Angular (TypeScript)| +  | +   | +   | -   | +   |
-| Vue.js (JavaScript)| +  | +   | +   | -   | +   |
-| Express (Node.js) | +   | +   | +   | -   | +   |
-| NestJS (TypeScript)| +  | +   | +   | -   | +   |
-
 
 **Single Responsibility Principle (SRP)**:
 
@@ -100,3 +91,17 @@ Look `*.ts` files code for more explanation of every SOLID rule.
 ## `ts-node`
 
 - `ts-node 1.srp.ts` execute TypeScript file/code in NodeJS ecosystem
+
+
+## How JavaScript libraries/frameworks follow SOLID?
+
+Note. Info composed based on ChatGPT prompts:
+
+| Framework/Lib     | SRP | OCP | LSP | ISP | DIP |
+|-------------------|-----|-----|-----|-----|-----|
+| React (JavaScript)| +   | +   | +   | -   | +   |
+| Angular (TypeScript)| +  | +   | +   | -   | +   |
+| Vue.js (JavaScript)| +  | +   | +   | -   | +   |
+| Express (Node.js) | +   | +   | +   | -   | +   |
+| NestJS (TypeScript)| +  | +   | +   | -   | +   |
+

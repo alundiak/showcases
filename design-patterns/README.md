@@ -18,6 +18,7 @@ Other:
 - https://refactoring.guru/design-patterns (like clone of sourcemaking.com)
 - https://sourcemaking.com/design_patterns (like clone of refactoring.guru)
 - https://www.linkedin.com/posts/brijpandeyji_design-patterns-are-time-tested-templates-activity-7141388959699410945-V9vN
+- https://www.linkedin.com/posts/mallikarjuna-chilakala-270b59253_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F%3F-activity-7143571730769276929-0NsP 
 
 ## Key notes about Design patterns
 
@@ -67,8 +68,8 @@ Other:
 
 **Builder**:
 
-- 
-- 
+- Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+- You can combine Builder with Bridge: the director class plays the role of the abstraction, while different builders act as implementations.
 
 ### Structural patterns
 
