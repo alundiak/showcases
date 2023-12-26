@@ -10,6 +10,7 @@ Showcases for different Software Development topics with code examples to give a
 - maybe AntiPatterns? => https://sourcemaking.com/antipatterns
 - Architectural Patterns?
   - showcases: Microservices, Monolithic, Serverless, and Event-Driven Architecture.
+  - https://www.linkedin.com/feed/update/urn:li:activity:7143571730769276929/
 - maybe Domain-Driven Design (DDD)?
   - showcases: Bounded Contexts, Entities, Value Objects, and Aggregates.
 - maybe Testing? 
