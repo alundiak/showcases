@@ -3,6 +3,7 @@
 // Example: Online Shopping System
 
 // Information Expert
+// @ts-ignore
 class Product {
   constructor(public name: string, public price: number) { }
 
@@ -13,6 +14,7 @@ class Product {
 }
 
 // Creator
+// @ts-ignore
 class ShoppingCart {
   // Creator: ShoppingCart creates an instance of Product
   addItemToCart(product: Product, quantity: number): void {

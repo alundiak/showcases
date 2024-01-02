@@ -44,3 +44,9 @@ Introduce a class that does not represent a real-world concept when necessary to
 
 > Assign a responsibility to an intermediary object to mediate between other components or services to reduce the coupling between them.
 This principle is useful for reducing direct dependencies between classes.
+
+
+## Notable libraries, frameworks, services or platforms that were recognized in the industry who follow GRASP principles
+
+- **Spring Framework (Java)** follows many OOP principles and design patterns. The use of dependency injection and inversion of control aligns with GRASP's Controller pattern.
+- **ASP.NET MVC (C#)** follows the Model-View-Controller pattern, which aligns with GRASP's Controller pattern. Controllers in ASP.NET MVC typically handle user input, coordinating with models and views.
