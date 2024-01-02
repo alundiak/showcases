@@ -10,6 +10,9 @@ But since **TypeScript** appeared as superset after JavaScript, implementing mor
 
 # Topics
 
+## kinda hard skills related
+
+- [OOP paradigms](./OOP/README.md)
 - [SOLID principles](./SOLID/README.md)
 - [GRASP principles](./GRASP/README.md)
 - [SOAR solutions](./SOAR/README.md)
@@ -23,6 +26,9 @@ But since **TypeScript** appeared as superset after JavaScript, implementing mor
 - maybe Testing? 
   - showcases: Unit Testing, Integration Testing, and End-to-End Testing. Understand the importance of test-driven development (TDD) and behavior-driven development (BDD).
 
+## kinda soft skills related
+
+- [GRIT](./GRIT/README.md)
 
 # Note.
 
