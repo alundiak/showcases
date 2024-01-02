@@ -34,6 +34,7 @@ class OrderController {
 }
 
 // Low Coupling and High Cohesion
+// @ts-ignore
 class Customer {
   constructor(public name: string) { }
 

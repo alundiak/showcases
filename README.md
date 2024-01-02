@@ -1,4 +1,4 @@
-Software Development Showcases
+Showcases
 ===
 
 Showcases for different Software Development topics with code examples to give an educational impression of how theoretical becomes practical.
@@ -9,6 +9,8 @@ But since **TypeScript** appeared as superset after JavaScript, implementing mor
 
 
 # Topics
+
+There are many concepts, paradigms, principles related to software design, design and architectural patterns, rules and solutions. 
 
 ## kinda hard skills related
 
@@ -22,8 +24,7 @@ But since **TypeScript** appeared as superset after JavaScript, implementing mor
   - showcases: Microservices, Monolithic, Serverless, and Event-Driven Architecture.
   - https://www.linkedin.com/feed/update/urn:li:activity:7143571730769276929/
 - [DDD](./DDD/README.md)
-- maybe Testing? 
-  - showcases: Unit Testing, Integration Testing, and End-to-End Testing. Understand the importance of test-driven development (TDD) and behavior-driven development (BDD).
+- [TDD and BDD](./TDD_BDD/README.md)
 
 ## kinda soft skills related
 
