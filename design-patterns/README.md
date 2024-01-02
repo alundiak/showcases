@@ -39,12 +39,6 @@ Other:
 - The value of `__proto__` on any instance of the constructor, is a direct reference to the constructor’s `prototype`!
 - The `Object.create()` method lets us create a new object, to which we can explicitly pass the value of its prototype
 
-
-**Module**:
-
-- The Module pattern allows you to split up your code into smaller, reusable pieces.
-- ES2015 introduced built-in JavaScript modules. 
-
 **Factory?** or **Factory Method**:
 
 - A function is a "factory function" when it returns a new object without the use of the `new` keyword!
@@ -56,7 +50,6 @@ Other:
 - Many designs start by using Factory Method (less complicated and more customizable via subclasses) and evolve toward Abstract Factory, Prototype, or Builder (more flexible, but more complicated).
 - Abstract Factory classes are often based on a set of Factory Methods, but you can also use Prototype to compose the methods on these classes.
 - You can use Factory Method along with Iterator to let collection subclasses return different types of iterators that are compatible with the collections.
-
 
 **Abstract Factory**:
 
@@ -70,9 +63,19 @@ Other:
 - Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
 - You can combine Builder with Bridge: the director class plays the role of the abstraction, while different builders act as implementations.
 
+**Object Pool** (new term for me in 2023)
+
+- The Object Pool Pattern involves creating and maintaining a pool of reusable objects to avoid the overhead of object creation and destruction. 
+
 ### Structural patterns
 
-TBD
+
+**Module**:
+
+- The Module pattern allows you to split up your code into smaller, reusable pieces.
+- ES2015 introduced built-in JavaScript modules. 
+
+
 
 ### Behavioral patterns
 
@@ -87,3 +90,8 @@ From https://refactoring.guru/design-patterns/catalog
 From LinkedIn:
 
 ![img](./design_patterns_visualized_from_LinkedIn.gif)
+
+
+Maybe implement UI using Bootstrap Album layout
+
+https://getbootstrap.com/docs/5.0/examples/album/#

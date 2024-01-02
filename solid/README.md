@@ -1,6 +1,9 @@
 SOLID principles showcase
 ===
 
+SOLID principles are a set of guidelines for designing maintainable and scalable software, while design patterns are specific solutions to recurring design problems. 
+Following SOLID principles can lead to the creation of well-architected software, and design patterns are tools that can be applied within that architecture to address specific challenges.
+
 ![img](./SOLID1.png)
 
 # SOLID info
