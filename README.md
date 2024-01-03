@@ -1,7 +1,7 @@
 Showcases
 ===
 
-Showcases (acronyms) for different Software Development topics with code examples to give an educational impression of how theoretical becomes practical.
+Showcases for different Software Development topics which well known by acronyms to understand how theory becomes practice.
 
 My special angle is **JavaScript** which is functional programming language and as result many SOLID principles and Design patterns are not so relevant in JavaScript world. 
 
