@@ -1,7 +1,7 @@
 Showcases
 ===
 
-Showcases for different Software Development topics with code examples to give an educational impression of how theoretical becomes practical.
+Showcases (acronyms) for different Software Development topics with code examples to give an educational impression of how theoretical becomes practical.
 
 My special angle is **JavaScript** which is functional programming language and as result many SOLID principles and Design patterns are not so relevant in JavaScript world. 
 
@@ -37,6 +37,10 @@ There are many concepts, paradigms, principles related to software design, desig
 ## kinda soft skills related
 
 - [GRIT](./GRIT/README.md)
+
+## Maybe?
+
+- OWASP stands for the Open Web Application Security Project. It is a non-profit organization that focuses on improving the security of software. OWASP provides resources, tools, and documentation to help organizations and individuals understand and address security issues in web applications and software development.
 
 ## Note.
 

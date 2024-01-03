@@ -18,6 +18,7 @@ Other:
 - https://refactoring.guru/design-patterns (like clone of sourcemaking.com)
 - https://sourcemaking.com/design_patterns (like clone of refactoring.guru)
 - https://www.linkedin.com/posts/brijpandeyji_design-patterns-are-time-tested-templates-activity-7141388959699410945-V9vN
+- https://dev.to/topefasasi/js-design-patterns-a-comprehensive-guide-h3m - TODO
 
 ## Key notes about Design patterns
 
