@@ -1,0 +1,21 @@
+{
+  "name": "@lundiak/tdd-vs-bdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.mjs",
+  "scripts": {
+    "tdd": "mocha ./tests/tdd.spec.mjs",
+    "bdd": "mocha ./tests/bdd.spec.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^5.0.0",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.11",
+    "@types/mocha": "^10.0.6"
+  }
+}
