@@ -1,11 +1,16 @@
+const express = require('express');
 const request = require('supertest');
-const app = require('./server');
+const apiRouter = require('./api');
+
+const testApp = express();
+
+testApp.use(apiRouter); // Mount the API router at the root path for testing
 
 describe('API Tests', () => {
   // let server;
 
   // beforeAll((done) => {
-  //   server = app.listen(3001, () => {
+  //   server = testApp.listen(3001, () => {
   //     done();
   //   });
   // });
@@ -16,13 +21,13 @@ describe('API Tests', () => {
 
   describe('GET /orders or /orders?type=', () => {
     it('should get all orders', async () => {
-      const response = await request(app).get('/orders');
+      const response = await request(testApp).get('/orders');
       expect(response.status).toBe(200);
       expect(response.body).toHaveLength(2);
     });
 
     it('should get filtered orders by type', async () => {
-      const response = await request(app).get('/orders?type=phones');
+      const response = await request(testApp).get('/orders?type=phones');
       expect(response.status).toBe(200);
       expect(response.body).toHaveLength(1);
     });
@@ -31,7 +36,7 @@ describe('API Tests', () => {
   describe('GET /orders/:orderId', () => {
     it('should get a specific order by ID', async () => {
       const orderId = 1;
-      const response = await request(app).get(`/orders/${orderId}`);
+      const response = await request(testApp).get(`/orders/${orderId}`);
       expect(response.status).toBe(200);
       expect(response.body.id).toBe(orderId);
     });
@@ -40,7 +45,7 @@ describe('API Tests', () => {
   describe('GET /orders/item/:itemId', () => {
     it('should get orders containing a specific item by ID', async () => {
       const itemId = 101;
-      const response = await request(app).get(`/orders/item/${itemId}`);
+      const response = await request(testApp).get(`/orders/item/${itemId}`);
       expect(response.status).toBe(200);
       expect(response.body).toHaveLength(1);
     });
@@ -49,7 +54,7 @@ describe('API Tests', () => {
   describe('POST /order', () => {
     it('should create a new order', async () => {
       const newOrder = { items: [{ itemId: 103, name: 'Item C' }], status: 'pending' };
-      const response = await request(app).post('/order').send(newOrder);
+      const response = await request(testApp).post('/order').send(newOrder);
       expect(response.status).toBe(201);
       expect(response.body).toHaveProperty('items');
       expect(response.body).toEqual(expect.objectContaining(newOrder));
@@ -62,7 +67,7 @@ describe('API Tests', () => {
       const updatedOrder = { items: [{ itemId: 102 }] }; // deliberately not providing `status` field.
 
       // Perform the PUT request
-      const response = await request(app)
+      const response = await request(testApp)
         .put(`/order/${orderId}`)
         .send(updatedOrder)
         .expect(200); // Expecting a successful update response
@@ -77,7 +82,7 @@ describe('API Tests', () => {
       const updatedOrder = { items: [{ itemId: 102, name: 'Updated Item' }], status: 'approved' };
 
       // Perform the PUT request for a non-existing order
-      await request(app)
+      await request(testApp)
         .put(`/order/${nonExistentOrderId}`)
         .send(updatedOrder)
         .expect(404); // Expecting a 404 Not Found response
@@ -87,14 +92,14 @@ describe('API Tests', () => {
   describe('PATCH /approve-order/:orderId', () => {
     it('should approve an order', async () => {
       const orderId = 1;
-      const response = await request(app).patch(`/approve-order/${orderId}`);
+      const response = await request(testApp).patch(`/approve-order/${orderId}`);
       expect(response.status).toBe(200);
       expect(response.body.status).toBe('approved');
     });
 
     it('should return 404 when trying to approve not existing order', async () => {
       const orderId = 4; // 3 used during emulation of POST
-      const response = await request(app).patch(`/approve-order/${orderId}`);
+      const response = await request(testApp).patch(`/approve-order/${orderId}`);
       expect(response.status).toBe(404);
       // expect(response.body).toEqual({});
       expect(response.body.error).toEqual("Order not found");
@@ -104,14 +109,14 @@ describe('API Tests', () => {
   describe('PATCH /reject-order/:orderId', () => {
     it('should reject an order', async () => {
       const orderId = 1;
-      const response = await request(app).patch(`/reject-order/${orderId}`);
+      const response = await request(testApp).patch(`/reject-order/${orderId}`);
       expect(response.status).toBe(200);
       expect(response.body.status).toBe('rejected');
     });
 
     it('should return 404 when trying to reject a not existing order', async () => {
       const orderId = 4; // 3 used during emulation of POST
-      const response = await request(app).patch(`/reject-order/${orderId}`);
+      const response = await request(testApp).patch(`/reject-order/${orderId}`);
       expect(response.status).toBe(404);
       expect(response.body.error).toEqual("Order not found");
     });
@@ -122,7 +127,7 @@ describe('API Tests', () => {
       const orderId = 1;
       const adminUsername = 'admin';
 
-      const response = await request(app)
+      const response = await request(testApp)
         .delete(`/order/${orderId}`)
         .set('x-username', adminUsername);
 
@@ -133,7 +138,7 @@ describe('API Tests', () => {
       const orderId = 1;
       const nonAdminUsername = 'user';
 
-      const response = await request(app)
+      const response = await request(testApp)
         .delete(`/order/${orderId}`)
         .set('x-username', nonAdminUsername);
 
@@ -144,7 +149,7 @@ describe('API Tests', () => {
       const orderId = 1;
       const nonExistingUsername = 'andriiUser';
 
-      const response = await request(app)
+      const response = await request(testApp)
         .delete(`/order/${orderId}`)
         .set('x-username', nonExistingUsername);
 
@@ -155,7 +160,7 @@ describe('API Tests', () => {
       const orderId = 4; // 3 used during emulation of POST
       const adminUsername = 'admin';
 
-      const response = await request(app)
+      const response = await request(testApp)
         .delete(`/order/${orderId}`)
         .set('x-username', adminUsername);
 

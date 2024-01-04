@@ -11,7 +11,7 @@ My note: very frequent REST is associated explicitly with **CRUD** acronym, whic
 
 ## REST name convention
 
-- Use standard HTTP methods to perform operations on resources.
+- Use **standard HTTP methods** to perform operations on resources.
   - GET /users, POST /users, GET /users/{id}, PUT /users/{id} or PATCH /users/{id}, DELETE /users/{id}, etc.
 - plural vs. singular
   - Use **plural nouns to represent resources**. For example, use `/users` instead of `/user`.
