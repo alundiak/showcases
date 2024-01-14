@@ -38,3 +38,10 @@ https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs
 ChatGPT:
 
 > CQRS separates read and write operations for a data store. Commands modify the state, and queries retrieve data.
+
+
+## Videos mentioning CQRS
+
+https://www.youtube.com/watch?v=LvmPa7YKgqM (suggested from devstyle.pl)
+
+> Event sourcing architectures naturally lead to messaging and CQRS-based services. We can benefit from getting rid of typical relational database models and replacing them with event reconstruction. 
