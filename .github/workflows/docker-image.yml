@@ -1,0 +1,22 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: cd SOA/microservices && ls -la
+    - run: docker build -t serviceA:$(date +%s) . --file ServiceA.Dockerfile
+    - run: docker build -t serviceB:$(date +%s) . --file ServiceB.Dockerfile
+    - run: docker build -t serverApp:$(date +%s) . --file Server.Dockerfile
+    - run: echo "One last message"
