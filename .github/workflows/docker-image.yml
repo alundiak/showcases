@@ -28,7 +28,7 @@ jobs:
           docker images
       - run: |
           cd SOA/micro-services/
-          docker ps
+          docker ps -a
       - run: |
           cd SOA/micro-services/
           docker network ls
