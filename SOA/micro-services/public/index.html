@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client App</title>
+</head>
+
+<body>
+
+  <h1>Client App</h1>
+
+  <button onclick="getServiceAData()">Get me ServiceA data</button>
+  <button onclick="getServiceBData()">Get me ServiceB data</button>
+
+  <div id="responseData"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script>
+    const responseDataDiv = document.getElementById('responseData');
+
+    function getServiceAData() {
+      axios.post('http://localhost:3001/getAData', { service: 'ServiceA' })
+        .then(response => {
+          console.log(response);
+          displayResponse(response.data);
+        })
+        .catch(error => {
+          console.error('Error getting data from ServiceA:', error);
+        });
+    }
+
+    function getServiceBData() {
+      axios.post('http://localhost:3002/getBData', { service: 'ServiceB' })
+        .then(response => {
+          console.log(response);
+          displayResponse(response.data);
+        })
+        .catch(error => {
+          console.error('Error getting data from ServiceB:', error);
+        });
+    }
+
+    function displayResponse(data) {
+      responseDataDiv.innerHTML = `<p>Data: ${JSON.stringify(data)}</p>`;
+    }
+  </script>
+
+</body>
+
+</html>
