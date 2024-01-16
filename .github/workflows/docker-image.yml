@@ -23,4 +23,12 @@ jobs:
       - run: |
           cd SOA/micro-services/
           docker build -t serverapp:$(date +%s) --file Server.Dockerfile .
-      - run: echo "One last message"
+      - run: |
+          cd SOA/micro-services/
+          docker images
+      - run: |
+          cd SOA/micro-services/
+          docker ps
+      - run: |
+          cd SOA/micro-services/
+          docker network ls
