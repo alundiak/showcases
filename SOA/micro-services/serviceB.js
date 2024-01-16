@@ -7,11 +7,18 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post('/getBData', (req, res) => {
+// Get data from Service B
+app.get('/getBData', (req, res) => {
   // Simulate getting data from ServiceB
   const responseData = { service: 'ServiceB', message: 'Data from ServiceB' };
-  eventBus.emit('dataReceived', responseData);
   res.json(responseData);
+});
+
+// Create data for Service B
+app.post('/createBData', (req, res) => {
+  const data = req.body;
+  // Handle data creation logic for ServiceB here (not implemented in this example)
+  res.send('Data created for ServiceB');
 });
 
 app.listen(3002, () => {
