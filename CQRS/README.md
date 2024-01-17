@@ -45,3 +45,15 @@ ChatGPT:
 https://www.youtube.com/watch?v=LvmPa7YKgqM (suggested from devstyle.pl)
 
 > Event sourcing architectures naturally lead to messaging and CQRS-based services. We can benefit from getting rid of typical relational database models and replacing them with event reconstruction. 
+
+
+2016 - https://www.youtube.com/watch?v=4k7bLtqXb8c 
+"How to CQRS in Node: Eventually Consistent, Unidirectional Systems with Microservices"
+
+- Commands (web-client => web-app, web-app => (micro)service)
+- Events ((micro)service => demoralizer (MongoDB-like))
+- Queries (demoralizer DB => web-app => web-client)
+
+We don't WRITE to DB, we ONLY READ from DB.
+
+

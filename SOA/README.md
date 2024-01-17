@@ -28,6 +28,8 @@ https://aws.amazon.com/what-is/service-oriented-architecture/
 • Apache ActiveMQ
 • Java Message Service (JMS)
 
+## Microservices
+
 > Microservices architecture is made up of very small and completely independent software components, called microservices, that specialize and focus on one task only. Microservices communicate through APIs, which are rules that developers create to let other software systems communicate with their microservice.
 
 
@@ -41,3 +43,5 @@ https://aws.amazon.com/what-is/service-oriented-architecture/
 • Choose from 15 relational and non-relational purpose-built AWS databases to support microservices architecture.
 • Easily monitor and control microservices running on AWS with AWS App Mesh.
 • Monitor and troubleshoot complex microservice interactions with AWS X-Ray.
+
+My dedicated repo is here: https://github.com/alundiak/micro-services-experiments
