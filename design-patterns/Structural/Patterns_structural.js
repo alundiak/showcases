@@ -17,10 +17,6 @@ var Composite = function () {
   // pattern impl
 }
 
-var Decorator = function () {
-  // pattern impl
-}
-
 var Facade = function () {
   // pattern impl
 }
